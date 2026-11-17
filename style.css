@@ -197,20 +197,12 @@ button {
   gap: 3rem;
 }
 
-.eyebrow,
 .section-tag,
 .project-number,
 .education-date {
   font-family: var(--mono);
   font-size: 0.76rem;
   letter-spacing: 0.08em;
-}
-
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: var(--cyan);
 }
 
 .status-dot {
@@ -249,6 +241,7 @@ button {
   margin: 0.8rem 0 0;
   color: var(--muted);
   font-size: 1.02rem;
+  text-align: justify;
 }
 
 .actions {
@@ -482,6 +475,7 @@ button {
 .about-copy > p {
   margin: 0 0 1rem;
   color: var(--muted);
+  text-align: justify;
 }
 
 .about-copy strong {
@@ -513,16 +507,6 @@ button {
   max-width: 720px;
   margin: 0 auto 3rem;
   text-align: center;
-}
-
-.section-intro {
-  max-width: 580px;
-  margin: 1rem 0 0;
-  color: var(--muted);
-}
-
-.centered .section-intro {
-  margin-inline: auto;
 }
 
 .skills-grid {
@@ -572,6 +556,7 @@ button {
   padding-left: 1.1rem;
   color: var(--muted);
   font-size: 0.82rem;
+  text-align: justify;
 }
 
 .skill-list li::marker {
@@ -616,25 +601,6 @@ button {
   margin: 0.35rem 0 0;
   color: var(--muted);
   font-size: 0.88rem;
-}
-
-.education-card .education-detail {
-  margin-top: 1rem;
-  font-size: 0.82rem;
-}
-
-.projects-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.projects-heading .section-intro {
-  max-width: 350px;
-  margin-bottom: 0.2rem;
-  font-size: 0.9rem;
 }
 
 .project-grid {
@@ -709,10 +675,10 @@ button {
 }
 
 .project-body > p:not(.project-number) {
-  min-height: 4.8em;
   margin: 0.6rem 0 1.1rem;
   color: var(--muted);
   font-size: 0.84rem;
+  text-align: justify;
 }
 
 .project-tags {
@@ -928,10 +894,6 @@ button {
     text-align: left;
   }
 
-  .centered .section-intro {
-    margin-inline: 0;
-  }
-
   .skills-grid,
   .project-grid {
     grid-template-columns: 1fr;
@@ -939,16 +901,6 @@ button {
 
   .skill-card {
     min-height: 0;
-  }
-
-  .projects-heading {
-    align-items: start;
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-
-  .projects-heading .section-intro {
-    max-width: 100%;
   }
 
   .project-art {
